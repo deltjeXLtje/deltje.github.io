@@ -100,4 +100,12 @@ h2 {
     text-align: center;
     padding-top: 40px;
     font-size: 50px;
+
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .navbar, body, section, .img_center {
+    width: 100%;
+  }
 }
