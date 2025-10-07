@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+    --primary: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary);
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("Patat-of-friet-shutterstock-900-500.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 65%;
+    padding: 16px 32px;
+}
+
+.navbar>ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+#nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    float: left;
+    height: 100vh;
+}
+
+#logo {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.underline_text {
+    text-decoration-color: transparent;
+    text-underline-offset: 8px;
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
+}
+
+.underline_text:hover {
+    text-decoration-color: var(--primary);
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
+}
+
+.img_center {
+    display: block;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#home {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#siege {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cs {
+    background-color: rgba(255, 251, 0, 0.5);
+}
+
+#valorant {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+}
