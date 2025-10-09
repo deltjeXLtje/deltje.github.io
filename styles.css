@@ -132,4 +132,10 @@ h2 {
   #logo {
     display: none;
   }
+  .video {
+    aspect-ratio: 9 / 16;
+  }
+  .yt-video {
+    padding-top: 30%;
+  }
 }
