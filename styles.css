@@ -127,7 +127,7 @@ h2 {
   /* For mobile phones: */
   .navbar>ul, .navbar {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
   #logo {
     display: none;
