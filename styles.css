@@ -36,6 +36,7 @@ body {
 
 .navbar>ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     gap: 40px;
 }
@@ -52,6 +53,7 @@ section {
 }
 
 #logo {
+    width: 100%;
     font-size: 40px;
     text-decoration: none;
 }
@@ -74,6 +76,7 @@ section {
 }
 
 .img_center {
+    text-align: center;
     display: block;
     margin-top: 75px;
     margin-left: auto;
@@ -115,7 +118,15 @@ h2 {
 
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
-  .navbar, body, section, .img_center {
+  .navbar, .navbar>ul, body, section, .img_center, .video {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  /* For mobile phones: */
+  .navbar>ul, .navbar {
+    width: 100%;
+    flex-direction: column;
   }
 }
