@@ -1,70 +1,132 @@
-<!DOCTYPE html>
-<html>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-<head>
-    <meta charset="UTF-8">
-    <title>Patataim.nl</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="images/jpg" href="Patat-of-friet-shutterstock-900-500.jpg">
-    <link rel="stylesheet" href="styles.css">
-    </style>
-</head>
+:root {
+    --primary: white;
+}
 
-<body>
-    <section id="home">
-        <h2>Welcome to Patataim.nl</h2>
-        <header>
-            <nav class="navbar">
-                <h1><a id="logo">Patataim.nl</a></h1>
-                <ul class="nav-links">
-                    <li><a class="underline_text" href="#home">Home</a></li>
-                    <li><a class="underline_text" href="#siege">R6</a></li>
-                    <li><a class="underline_text" href="#cs">Cs2</a></li>
-                    <li><a class="underline_text" href="#valorant">Valorant</a></li>
-                </ul>
-            </nav>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary);
+}
 
-            <div class="yt-video">
-                <iframe class="video" src="https://www.youtube.com/embed/89uQFUu3p6E"
-                    title="Get PERFECT Tracking Aim In Any Game (complete guide)" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+body {
+    min-height: 100vh;
+    background-image: url("Patat-of-friet-shutterstock-900-500.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
 
-        </header>
-    </section>
-    <section id="siege">
-        <h2>Rainbow Six Siege</h2>
-        <div class="yt-video">
-            <iframe class="video" src="https://www.youtube.com/embed/EDyMH4-n318"
-                title="2 Mins to UnF*ck Your Aim in Siege (Forever)" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position : fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 65%;
+    padding: 16px 32px;
+}
 
-    </section>
+.navbar>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
 
-    <section id="cs">
-        <h2>Counterstrike2</h2>
-        <div class="yt-video">
-            <iframe class="video" src="https://www.youtube.com/embed/7hiffGrQGU0" title="How to Master Calm Aim in CS2"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+#nav-links a {
+    color: #000;
+    text-decoration: none;
+}
 
-    </section>
-    <section id="valorant">
-        <h2>Valorant</h2>
-        <div class="yt-video">
-            <iframe class="video" src="https://www.youtube.com/embed/aH54vPn4F1c"
-                title="5 Tips That Will Instantly Fix Your Aim" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+section {
+    width: 100%;
+    float: left;
+    height: 100vh;
+}
 
-    </section>
+#logo {
+    width: 100%;
+    font-size: 40px;
+    text-decoration: none;
+}
 
-</body>
+#logo:hover {
+    cursor: pointer;
+}
 
-</html>
+.underline_text {
+    text-decoration-color: transparent;
+    text-underline-offset: 8px;
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
+}
+
+.underline_text:hover {
+    text-decoration-color: var(--primary);
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
+}
+
+.img_center {
+    text-align: center;
+    display: block;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.yt-video {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 50% !important;
+}
+
+#home {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#siege {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cs {
+    background-color: rgba(255, 251, 0, 0.5);
+}
+
+#valorant {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .navbar, .navbar>ul, body, section, .img_center, .video {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  /* For mobile phones: */
+  .navbar>ul, .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+}
