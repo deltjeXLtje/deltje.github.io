@@ -26,7 +26,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position : fixed;
+    width: 100%;
     top: 0;
     left: 0;
     right: 65%;
@@ -80,6 +81,16 @@ section {
     max-width: 100%;
 }
 
+.yt-video {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 50% !important;
+}
+
 #home {
     background-color: rgba(255, 255, 255, 0);
 }
@@ -100,10 +111,9 @@ h2 {
     text-align: center;
     padding-top: 40px;
     font-size: 50px;
-
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .navbar, body, section, .img_center {
     width: 100%;
