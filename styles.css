@@ -41,9 +41,53 @@ body {
     gap: 40px;
 }
 
+.navbar>ul>ul.dropdown li {
+    display: block;
+}
+
+.navbar>ul>li>ul.dropdown {
+    width: 100%;
+    background-color: #ff000000;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    list-style: none;
+}
+
+
+.navbar>ul>li:hover ul.dropdown {
+    display: block;
+}
+
+
 #nav-links a {
     color: #000;
     text-decoration: none;
+}
+
+.gamenavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position : fixed;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    right: 65%;
+    padding: 16px 32px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.gamenavbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 40px;
+}
+
+.gamenavbar ul li {
+    pointer-events: auto;
 }
 
 section {
@@ -89,6 +133,39 @@ section {
     padding-top: 5%;
 }
 
+.game-img {
+    text-align: center;
+    padding-top: 5%;
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+}
+
+.clickable-img {
+    cursor: pointer;
+    transition: 0.3s;
+    aspect-ratio: 16 / 9;
+    width: 50% !important;
+}
+
+/* Fullscreen overlay */
+#overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+#overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 .video {
     aspect-ratio: 16 / 9;
     width: 50% !important;
@@ -120,6 +197,60 @@ h2 {
     padding-top: 40px;
     font-size: 50px;
 }
+
+#tanglewood {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#edgfield {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#ridgeview {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#grafton {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#willow {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pointhope {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#highschool {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bleasdale {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#highschool {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#asylum {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#prison {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#camp {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#maple {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 
 #aimtrainer {
     background-color: rgba(0, 0, 0, 0.5);
