@@ -250,6 +250,10 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#nells {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .container {
     display: flex;
     justify-content: center;
