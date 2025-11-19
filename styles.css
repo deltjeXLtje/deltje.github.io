@@ -57,6 +57,7 @@ body {
 
 .navbar>ul>li:hover ul.dropdown {
     display: block;
+    background-color: #000000aa;
 }
 
 
@@ -263,14 +264,13 @@ h2 {
 }
 
 
-#aimtrainer {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .navbar, .navbar>ul, body, section, .img_center, .video {
     width: 100%;
+  }
+  .gamenavbar {
+    display: none;
   }
 }
 
@@ -289,7 +289,5 @@ h2 {
   .yt-video {
     padding-top: 30%;
   }
-  .game, #aimtrainer {
-    display: none;
-  }
+
 }
