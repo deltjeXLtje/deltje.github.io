@@ -292,4 +292,8 @@ h2 {
     display: none;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
 }
