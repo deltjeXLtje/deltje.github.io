@@ -264,7 +264,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1300px) {
   /* For mobile phones: */
   .navbar, .navbar>ul, body, section, .img_center, .video {
     width: 100%;
@@ -291,4 +291,5 @@ h2 {
   }
 
 }
+
 
