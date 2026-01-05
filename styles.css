@@ -12,6 +12,10 @@
     color: var(--primary);
 }
 
+.phas {
+    background-image: url("tangle.jpg");
+}
+
 body {
     min-height: 100vh;
     background-image: url("Patat-of-friet-shutterstock-900-500.jpg");
