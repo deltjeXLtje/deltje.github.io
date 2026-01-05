@@ -28,7 +28,7 @@ body {
     min-height: 100vh;
     background-image: url("Patat-of-friet-shutterstock-900-500.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: center;
@@ -313,3 +313,4 @@ h2 {
 }
 
 }
+
