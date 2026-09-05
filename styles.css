@@ -12,6 +12,16 @@
     color: var(--primary);
 }
 
+.mce {
+    min-height: 100vh;
+    background-image: url("minecraftfolder/enchanting.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+
 .phas {
     min-height: 100vh;
     background-image: url("tangle.jpg");
@@ -119,7 +129,7 @@ section {
 
 .underline_text {
     text-decoration-color: transparent;
-    text-underline-offset: 8px;
+    text-underline-offset: 4px;
     transition-property: text-decoration-color;
     transition-duration: 1s;
 }
@@ -157,6 +167,30 @@ section {
     aspect-ratio: 16 / 9;
     width: 50% !important;
 }
+
+.clickable-img-mc {
+    cursor: pointer;
+    transition: 0.3s;
+    aspect-ratio: 16 / 9;
+    width: 90% !important;
+}
+
+.clickable-img-mc:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.clickable-img-mce {
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100% !important;
+}
+
+.clickable-img-mce:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 
 /* Fullscreen overlay */
 #overlay {
@@ -265,6 +299,26 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#searchbar {
+    width: 10%;
+    font-size: 16px;
+    padding: 12px 10px 12px 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+#amount {
+    width: 5%;
+    font-size: 16px;
+    padding: 12px 10px 12px 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -273,6 +327,29 @@ h2 {
     padding-top: 20px;
 }
 
+.container-mc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-top: 20px;
+}
+
+.container-mce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 200px;
+}
+
+.container-armor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 100px;
+}
 
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
